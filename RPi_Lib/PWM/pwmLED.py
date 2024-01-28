@@ -9,7 +9,7 @@ gpio.setup(led_pin, gpio.OUT)
 
 
 #set led pin pwm
-pwmFreq = 100 #1000 Hz which is 1/10000 sec as T = 1/F
+pwmFreq = 100 #100 Hz which is 1/100 sec as T = 1/F
 channel = gpio.PWM(led_pin, pwmFreq)
 while True:
 	for duty in range(0,101):
